@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Ли](https://up.htmlacademy.ru/htmlcss/27/user/1117455).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин] (https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
