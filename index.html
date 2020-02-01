@@ -19,12 +19,14 @@
       </nav>
     </header>
     <main>
-      <h1>Добро пожаловать в Седону!</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section>
-        <span>Welcome</span>
+        <img src="img/background_photo.jpg" width="1200" height="773" alt="вид на Седону">
+        <img src="img/welcome.png" width="459" height="353" alt="надпись Добро пожаловать в Седону">
+        <!-- <span>Welcome</span> 
         <span>to the gorgeous</span>
         <span>Sedona</span>
-        <span><q>Because the Grand Canyon sucks!</q></span>
+        <span><q>Because the Grand Canyon sucks!</q></span>-->
       </section>
       <section>
         <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -32,7 +34,7 @@
       </section>
 
       <section>
-        <h2>5 основных причин</h2>
+        <h2 class="visually-hidden">5 основных причин</h2>
         <ul>
           <li>
             <img src="img/real_city.jpg" width="800" height="256" alt="городок">
@@ -88,7 +90,7 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <form>
+        <form action="" method="post"> 
           <fieldset>
             <legend>Поиск гостиницы в Седоне</legend>
             <label for="arrival date">Дата заезда</label>
@@ -101,7 +103,7 @@
             <label for="children">Дети</label>
             <input type="number" name="children" id="children" value="0"><br>
             
-            <input type="submit" value="Найти">
+            <button type="submit">Найти</button>
           </fieldset>
         </form>
 
