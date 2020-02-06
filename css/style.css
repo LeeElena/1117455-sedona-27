@@ -24,20 +24,16 @@ a {
   list-style: none;
 }
 
-.site-nav a:link {
+.site-nav a {
   color: #000000;
 }
 
-.site-nav a:visited {
-  color: #918279;
-}
-
 .site-nav a:hover {
-  color: #89b8d5;
+  color: #81b3d2;
 }
 
 .site-nav a:active {
-  color: #cccccc;
+  color: #cacaca;
 }
 
 .visually-hidden {
@@ -52,15 +48,47 @@ a {
   background-image: url("img/background_photo.jpg");
 }
 
-.intro {
+.intro h3 {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
 
 .intro p {
+  font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.reasons ul {
+  list-style: none;
+}
+
+.reason-item {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.reason-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reason-item p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.item-1 {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.item-1 p {
   color: #333333;
 }
 
@@ -148,21 +176,25 @@ a {
 
 /* inner */
 
+.on-site {
+  color: #766357;
+}
+
 .gallery li {
   list-style: none;
 }
 
-h3 a {
+.hotel-name {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
 
-h3 a:hover {
+.hotel-name:hover {
   color: #81b3d2;
 }
 
-h3 a:active {
+.hotel-name:active {
   color: #e0e0e0;
 }
 
