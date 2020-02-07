@@ -33,7 +33,7 @@ a {
 }
 
 .site-nav a:active {
-  color: #cacaca;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -204,6 +204,58 @@ a {
   color: #766357;
 }
 
+.hotel-choice {
+  background-image: url("../img/filter_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.hotel-choice legend {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.hotel-choice label {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.price button {
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: transparent;
+}
+
+.find {
+  font-size: 21px;
+}
+
+.sorting,
+.sorts-list {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorts-list li {
+  list-style: none;
+}
+
+.by-price {
+  color: #81b3d2;
+}
+
+.sorts-list a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.sorts-list a:hover {
+  color: #81b3d2;
+}
+
+.sorts-list a:active {
+  color: #000000;
+}
+
 .gallery li {
   list-style: none;
 }
@@ -219,7 +271,7 @@ a {
 }
 
 .hotel-name:active {
-  color: #e0e0e0;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item p {
