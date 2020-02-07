@@ -285,6 +285,10 @@ a {
   color: #ffffff;
 
   background-color: #81b3d2;
+  border-top: 5px solid #81b3d2;
+  border-bottom: 5px solid #81b3d2;
+  border-left: 15px solid #81b3d2;
+  border-right: 15px solid #81b3d2;
 }
 
 .details:hover {
@@ -302,6 +306,10 @@ a {
   color: #ffffff;
 
   background-color: #766357;
+  border-top: 5px solid #766357;
+  border-bottom: 5px solid #766357;
+  border-left: 15px solid #766357;
+  border-right: 15px solid #766357;
 }
 
 .booking:hover {
