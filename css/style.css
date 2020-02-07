@@ -257,6 +257,8 @@ a {
 }
 
 .gallery-list {
+  padding: 0;
+
   border-top: 2px solid #e5e5e5;
 }
 
@@ -324,7 +326,6 @@ a {
 
 .stars {
   color: #81b3d2;
-
 }
 
 .stars li {
