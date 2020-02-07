@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #eaeaea;
 }
 
 a {
@@ -45,7 +45,9 @@ a {
 }
 
 .main-photo {
-  background-image: url("img/background_photo.jpg");
+  background-image:
+    url("../img/background_photo.jpg");
+  background-color: #ffffff;
 }
 
 .intro h3 {
@@ -247,6 +249,8 @@ a {
 
 .stars {
   color: #81b3d2;
+
+  background-color: #ffffff;
 }
 
 .rating {
