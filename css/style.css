@@ -256,8 +256,11 @@ a {
   color: #000000;
 }
 
-.gallery {
+.gallery-list {
   border-top: 2px solid #e5e5e5;
+}
+
+.gallery-item {
   border-bottom: 2px solid #e5e5e5;
 }
 
