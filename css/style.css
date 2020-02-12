@@ -538,31 +538,17 @@ a {
 .hotel-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-}
-
-.hotel-name {
   margin-top: 30px;
-  margin-left: 237px;
-  margin-bottom: 104px;
-}
-
-.motel {
-  margin-top: 17px;
   margin-left: 237px;
 }
 
 .from {
-  margin-top: 17px;
   margin-left: 353px;
 }
 
 .details {
   width: 110px;
   height: 27px;
-  margin-left: 237px;
-
 }
 
 .booking {
@@ -586,8 +572,8 @@ a {
 }
 
 .rating {
-  margin-top: 93px;
-  margin-left: auto;
   width: 110px;
   height: 27px;
+  margin-top: 93px;
+  margin-left: auto;
 }
