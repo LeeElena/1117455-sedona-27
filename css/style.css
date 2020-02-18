@@ -274,15 +274,17 @@ a {
 
 .footer-socials li {
   list-style: none;
+  background-color: #81b3d2
 }
 
 .footer-socials a {
+  display: block;
   margin: 0;
   width: 46px;
   height: 48px;
-  color: #ffffff;
+  font-size: o;
+  line-height: 0;
 
-  background-color: #81b3d2
 }
 
 .footer-socials li:not(:last-child) {
@@ -302,16 +304,19 @@ a {
 .twitter {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .facebook {
   background-image: url("../img/fb_icon.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .youtube {
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .web {
