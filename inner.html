@@ -28,7 +28,7 @@
       <h1 class="visually-hidden">Выбор гостиницы</h1>
 
       <form class="hotel-choice" action="" method="post">
-        <fieldset class="infrastructure">
+        <div class="infrastructure">
           <legend>Инфраструктура:</legend>
           <label>
             <input type="checkbox" name="swimming pool" checked>
@@ -42,9 +42,9 @@
             <input type="checkbox" name="wi-fi">
             Wi-fi
           </label><br>
-        </fieldset>
+        </div>
 
-        <fieldset class="housing-type">
+        <div class="housing-type">
           <legend>Тип жилья:</legend>
           <label>
             <input type="checkbox" name="hotel" checked>
@@ -58,9 +58,9 @@
             <input type="checkbox" name="apartment" checked>
             Апартаменты
           </label><br>
-        </fieldset>
+        </div>
 
-        <fieldset class="price">
+        <div class="price">
           <legend>Стоимость в сутки (р):</legend>
           <label>
             От
@@ -72,7 +72,7 @@
           </label><br>
           <input type="range" min="0" max="4000" value="3000" step="10"><br>
           <button type="submit">Показать</button>
-        </fieldset>
+        </div>
       </form>
 
       <section class="sorts">

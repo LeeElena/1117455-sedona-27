@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-header {
   background-color: #fff;
   margin: 0 auto;
@@ -29,17 +34,21 @@ a {
 .main-nav {
   line-height: 26px;
   position: relative;
+  z-index: 1;
 }
 
 .main-logo {
+  width: 140px;
+  height: 71px;
   position: absolute;
   margin: 0 auto;
   left: 530px;
+  z-index: 2;
 }
 
 .site-nav {
   display: flex;
-  margin: 0 72px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -60,8 +69,8 @@ a {
 .site-nav li {
   width: 239px;
   padding: 0;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -78,18 +87,26 @@ a {
 }
 
 .main-photo {
+  width: 1200px;
+  height: 773px;
   background-image:
+    url("../img/polygon.png"),
     url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 72%;
   background-color: #ffffff;
+
 }
 
 .intro h3 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
 
 .intro p {
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -208,9 +225,29 @@ a {
   text-align: center;
 }
 
+.search-form {
+  margin-top: 52px;
+  margin-left: 316px;
+  margin-bottom: 78px;
+  margin-right: 316px;
+  width: 568px;
+  height: 481px;
+
+  line-height: 26px;
+
+  border: 1px solid red;
+}
+
 .search-form h3 {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 139px;
+  padding-bottom: 30px;
+  padding-left: 140px;
+
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   color: #ffffff;
 
   background-color: #766357;
@@ -224,13 +261,58 @@ a {
   background-color: #503e33;
 }
 
-.search-form {
-  line-height: 26px;
+.date-item {
+  width: 458px;
+  padding: 55px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.date-item input {
+  width: 346px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 8px;
+  padding-right: 0;
+  background-color: #f2f2f2;
+}
+
+.guests-item {
+  width: 458px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-right: 55px;
+  padding-left: 55px;
+  margin: 0;
+}
+
+.guests-item input {
+  width: 114px;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 
 .search-form button {
+  width: 458px;
+  height: 58px;
+  margin: 55px;
+  margin-top: 54px;
+
+  padding-top: 17px;
+  padding-right: 197px;
+  padding-bottom: 22px;
+  padding-left: 196px;
+
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -296,7 +378,8 @@ a {
 }
 
 .footer-socials a:active {
-  color: #88b6d1;
+  color: rgba(255, 255, 255, 0.3);
+
 
   background-color: #5496bd;
 }
@@ -341,11 +424,18 @@ a {
 }
 
 .hotel-choice {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-right: 74px;
+  padding-bottom: 31px;
+  padding-left: 72px;
   background-image: url("../img/filter_background.jpg");
   background-repeat: no-repeat;
 }
 
 .hotel-choice legend {
+  padding-bottom: 28px;
   font-size: 16px;
   color: #ffffff;
 }
@@ -355,10 +445,58 @@ a {
   color: #ffffff;
 }
 
-.price button {
-  font-weight: 400;
+.hotel-choice input {
   color: #ffffff;
+  border: 2px solid white;
+  background-color: transparent;
+}
 
+.infrastructure {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.housing-type {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-left: 116px;
+  margin: 0;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.price legend {
+  padding-bottom: 13px;
+}
+
+.price input {
+  width: 159px;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  text-align: center;
+}
+
+.price button {
+  margin-top: 34px;
+  margin-right: 98px;
+  margin-left: 86px;
+
+  padding-top: 11px;
+  padding-right: 33px;
+  padding-bottom: 11px;
+  padding-left: 35px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid white;
   background-color: transparent;
 }
 

@@ -28,7 +28,6 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
       <section class="main-photo">
-        <h2>Вид на Седону</h2>
       </section>
 
       <section class="intro">
@@ -116,17 +115,26 @@
 
         <form class="search-form" action="" method="post">
           <h3>Поиск гостиницы в Седоне</h3>
-          <label for="arrival-date">Дата заезда</label>
-          <input type="date" name="calendar" id="arrival-date" value="24 апреля 2017"><br>
-          <label for="date-of-departure">Дата выезда</label>
-          <input type="date" name="calendar" id="date-of-departure" value="4 июля 2017"><br>
+          <div class="search-form-container">
+            <p class="date-item">
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="date" name="calendar" id="arrival-date" value="24 апреля 2017">
 
-          <label for="adults">Взрослые</label>
-          <input type="number" name="adults" id="adults" value="2">
-          <label for="children">Дети</label>
-          <input type="number" name="children" id="children" value="0"><br>
+              <label for="date-of-departure">Дата выезда:</label>
+              <input type="date" name="calendar" id="date-of-departure" value="4 июля 2017">
+            </p>
 
-          <button type="submit">Найти</button>
+            <p class="guests-item">
+              <label for="adults">Взрослые</label>
+              <input type="number" name="adults" id="adults" value="2">
+
+              <label for="children">Дети</label>
+              <input type="number" name="children" id="children" value="0">
+            </p>
+
+            <button type="submit">Найти</button>
+          </div>
+
         </form>
 
       </section>
