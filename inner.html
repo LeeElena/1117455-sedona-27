@@ -31,34 +31,40 @@
       <form class="hotel-choice" action="" method="post">
         <div class="infrastructure">
           <p>Инфраструктура:</p>
-          <label>
-            <input type="checkbox" name="swimming pool" checked>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+            <span class="check__box"></span>
             Бассейн
-          </label><br>
-          <label>
-            <input type="checkbox" name="parking">
+          </label>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="parking">
+            <span class="check__box"></span>
             Парковка
-          </label><br>
-          <label>
-            <input type="checkbox" name="wi-fi">
+          </label>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="wi-fi">
+            <span class="check__box"></span>
             Wi-fi
-          </label><br>
+          </label>
         </div>
 
         <div class="housing-type">
           <p>Тип жилья:</p>
-          <label>
-            <input type="checkbox" name="hotel" checked>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="hotel" checked>
+            <span class="check__box"></span>
             Гостиница
-          </label><br>
-          <label>
-            <input type="checkbox" name="motel" checked>
+          </label>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="motel" checked>
+            <span class="check__box"></span>
             Мотель
-          </label><br>
-          <label>
-            <input type="checkbox" name="apartment" checked>
+          </label>
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox" name="apartment" checked>
+            <span class="check__box"></span>
             Апартаменты
-          </label><br>
+          </label>
         </div>
 
         <div class="price">
@@ -91,6 +97,23 @@
           <li class="by-type"><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
+        <label class="radio__input up">
+          <input class="visually-hidden" type="radio" name="icon-up" value="up">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+            xml:space="preserve">
+            <polygon fill="#cacaca" points="5.5,0 0,10 11,10 " />
+          </svg>
+
+        </label>
+        <label class="radio__input">
+          <input class="visually-hidden" type="radio" name="icon-down" value="down">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+            xml:space="preserve">
+            <polyline fill="#81b3d2" points="5.5,10 0,0 11,0 " />
+          </svg>
+        </label>
       </section>
 
       <section class="gallery">

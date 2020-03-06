@@ -97,16 +97,17 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <form class="search-form" action="" method="post">
-          <h3>Поиск гостиницы в Седоне</h3>
+
+          <h3 class="search-btn">Поиск гостиницы в Седоне</h3>
+          <form class="modal modal-search" action="" method="post">
             <div class="date-item">
               <label for="arrival-date">Дата заезда:</label>
-              <input type="date" name="calendar" id="arrival-date" value="24 апреля 2017">
-              <img class="arrival-calendar" src="img/calendar.png" alt="изображение календарика" width="21px" height="22px">
+              <input type="date" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+              <img class="arrival-calendar" src="img/calendar.png" alt="изображение календарика" width="21" height="22">
 
               <label for="date-of-departure">Дата выезда:</label>
-              <input type="date" name="calendar" id="date-of-departure" value="4 июля 2017">
-              <img class="departure-calendar" src="img/calendar.png" alt="изображение календарика" width="21px" height="22px">
+              <input type="date" name="calendar" id="date-of-departure" placeholder="4 июля 2017">
+              <img class="departure-calendar" src="img/calendar.png" alt="изображение календарика" width="21" height="22">
             </div>
 
             <div class="guests-item">
@@ -132,10 +133,10 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <div class="footer-contacts">
         #visitsedona
         <a href="#">Тел: +7(495) 666-02-66</a>
-      </p>
+      </div>
       <ul class="footer-socials">
         <li><a class="twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
         <li><a class="facebook" href="#"><span class="visually-hidden">facebook</span></a></li>
