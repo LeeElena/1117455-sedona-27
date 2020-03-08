@@ -87,10 +87,10 @@ img {
   position: relative;
   width: 1200px;
   height: 718px;
+  background-color: #81b3d2;
   background-image: url("../img/background_photo.jpg");
   background-position: 0 -54.8px;
   background-repeat: no-repeat;
-  background-color: #ffffff;
 }
 
 .main-photo::before {
@@ -114,6 +114,8 @@ img {
 }
 
 .intro {
+  position: absolute;
+  bottom: -32%;
   width: 1200px;
   background-color: #ffffff;
 }
@@ -129,7 +131,7 @@ img {
 
 .intro p {
   margin: 0;
-  padding-top: 38px;
+  padding-top: 32px;
   padding-right: 356px;
   padding-bottom: 56px;
   padding-left: 355px;
@@ -252,7 +254,7 @@ img {
   margin: 0;
   padding-top: 29px;
   padding-right: 10px;
-  padding-bottom: 49px;
+  padding-bottom: 45px;
   padding-left: 10px;
 }
 
@@ -271,7 +273,8 @@ img {
 .hotel-search h2 {
   margin: 0;
   padding: 0;
-  padding-top: 57px;
+  padding-top: 53px;
+  padding-bottom: 10px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -286,6 +289,7 @@ img {
 
 .search-btn {
   margin: 0;
+  margin-top: 45px;
   margin-right: 316px;
   margin-left: 316px;
   padding: 0;
@@ -307,21 +311,59 @@ img {
   background-color: #503e33;
 }
 
-.modal {
-  display: block;
-  line-height: 26px;
-  background-color: #ffffff;
-  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.modal-search {
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
+  display: none;
+  position: absolute;
   margin: 0 316px;
   padding: 0;
   width: 568px;
   height: 395px;
 }
 
-.modal-hide {
-  display: none;
+.modal-search {
+  line-height: 26px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+.modal-error {
+  animation: shake 0.5s;
 }
 
 .date-item {
@@ -476,34 +518,41 @@ img {
   background-color: #5496bd;
 }
 
+.sedona-map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+
 .main-footer {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding-top: 36px;
-  padding-right: 73px;
-  padding-bottom: 36px;
-  padding-left: 132px;
-  justify-content: space-around;
-  background-color: #f9fbf6;
+  padding-right: 102px;
+  padding-bottom: 25px;
+  padding-left: 130px;
+  background-color: #fefefe;
+  opacity: 0.9;
 }
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  width: 400px;
   margin: 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
 }
 
 .footer-contacts a {
+  padding-top: 7px;
   color: #000000;
 }
 
 .footer-socials {
   display: flex;
-  width: 400px;
   margin: 0;
+  margin-left: -54px;
   padding: 0;
 }
 
@@ -551,7 +600,6 @@ img {
 .web {
   display: flex;
   align-items: center;
-  width: 400px;
   margin: 0;
 }
 
@@ -782,7 +830,6 @@ img {
   padding-right: 73px;
   padding-bottom: 33px;
   padding-left: 72px;
-  border-bottom: 1px solid #e5e5e5;
   background-color: #fff;
 }
 
@@ -868,7 +915,7 @@ img {
   display: flex;
   padding: 30px 72px;
   padding-bottom: 17px;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .gallery li {
@@ -883,6 +930,7 @@ img {
 
 .hotel-name {
   margin: 0;
+  margin-top: -4px;
   padding: 0;
 }
 
@@ -903,7 +951,8 @@ img {
 .motel {
   margin: 0;
   margin-top: 3px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  padding: 2px 0;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
@@ -913,11 +962,12 @@ img {
   display: inline-block;
   min-width: 110px;
   margin-right: 6px;
+  vertical-align: top;
 }
 
 .details {
-  margin-right: 4px;
-  padding: 6px 16px;
+  margin-right: 3px;
+  padding: 5px 17px;
   line-height: 21px;
   color: #ffffff;
   text-align: center;
@@ -934,7 +984,7 @@ img {
 }
 
 .booking {
-  padding: 6px 16px;
+  padding: 5px 17px;
   line-height: 21px;
   color: #ffffff;
   text-align: center;
@@ -962,6 +1012,7 @@ img {
 }
 
 .stars li {
+  margin-top: -1px;
   margin-right: 5px;
   width: 18px;
   height: 17px;
@@ -971,11 +1022,16 @@ img {
   background-repeat: no-repeat;
 }
 
+.stars li:first-child {
+  margin-right: 0px;
+}
+
 .rating {
   margin-top: 40px;
-  padding-top: 5px;
+  margin-bottom: -3px;
+  padding-top: 3px;
   padding-right: 13px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   padding-left: 16px;
   line-height: 21px;
   font-weight: 400;
