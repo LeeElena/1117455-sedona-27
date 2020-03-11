@@ -4,6 +4,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: 0.1px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -94,6 +95,7 @@ img {
   background-image: url("../img/background_photo.jpg");
   background-position: 0 -55.5px;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .main-photo::before {
@@ -111,7 +113,7 @@ img {
   display: block;
   position: absolute;
   left: -2px;
-  bottom: 0;
+  bottom: -1.5px;
   width: 1202px;
   height: 59px;
   background-image: url("../img/polygon.png");
@@ -133,10 +135,10 @@ img {
 
 .intro p {
   margin: 0;
-  padding-top: 30px;
-  padding-right: 356px;
+  padding-top: 28px;
+  padding-right: 354px;
   padding-bottom: 50px;
-  padding-left: 355px;
+  padding-left: 356px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -172,9 +174,9 @@ img {
 }
 
 .about-bridge {
-  width: 303px;
-  padding-right: 49px;
-  padding-left: 48px;
+  width: 310px;
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .reason-item img {
@@ -184,13 +186,14 @@ img {
 
 .reason-item h3 {
   margin: 0;
+  margin-top: 2px;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
 }
 
 .reason-item p {
-  margin: 23px 0;
+  margin: 22px 0;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -222,9 +225,9 @@ img {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   width: 74px;
-  height: 70px;
+  height: 69px;
   background-image: url("../img/burger_icon.svg");
   background-repeat: no-repeat;
 }
@@ -234,9 +237,9 @@ img {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   width: 64px;
-  height: 72px;
+  height: 70px;
   background-image: url("../img/souvenir_icon.svg");
   background-repeat: no-repeat;
 }
@@ -245,13 +248,17 @@ img {
   width: 380px;
   padding-top: 60px;
   padding-right: 10px;
-  padding-bottom: 57px;
+  padding-bottom: 56px;
   padding-left: 10px;
   margin: 0;
 }
 
+.real-city li:last-child {
+  padding-top: 58px;
+}
+
 .real-city p {
-  margin-top: 25px;
+  margin-top: 24px;
   color: #333333;
 }
 
@@ -316,6 +323,7 @@ img {
   text-align: center;
   color: #ffffff;
   background-color: #766357;
+  cursor: pointer;
 }
 
 .search-btn:hover {
@@ -395,14 +403,32 @@ img {
 
 .arrival-calendar {
   position: absolute;
-  top: 33%;
-  right: 11%;
+  top: 34%;
+  right: 11.4%;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+}
+
+.arrival-calendar:hover,
+.departure-calendar:hover {
+  background-image: url("../img/calendar-hover.png");
+}
+
+.arrival-calendar:active,
+.departure-calendar:active {
+  background-image: url("../img/calendar-active.png");
 }
 
 .departure-calendar {
   position: absolute;
   top: 68%;
-  right: 11%;
+  right: 11.4%;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
 }
 
 .date-item input {
@@ -411,6 +437,7 @@ img {
   margin-bottom: 28px;
   padding: 8px;
   padding-bottom: 6px;
+  font-weight: 700;
   background-color: #f2f2f2;
   border: 2px solid transparent;
 }
@@ -428,7 +455,13 @@ img {
   width: 458px;
   display: flex;
   margin: 0;
+  margin-top: 2px;
   padding: 0;
+}
+
+.guests-item input {
+  font-weight: 700;
+  text-align: right;
 }
 
 .number-adults {
@@ -436,8 +469,8 @@ img {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-right: 53px;
-  padding-left: 55px;
+  padding-right: 52px;
+  padding-left: 54px;
 }
 
 .number-children {
@@ -522,6 +555,7 @@ img {
   color: #ffffff;
   background-color: #81b3d2;
   border: 0px solid transparent;
+  cursor: pointer;
 }
 
 .find-button:hover {
@@ -648,7 +682,7 @@ img {
   margin: 0 auto;
   padding-top: 28px;
   padding-right: 74px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
   padding-left: 72px;
   background-image: url("../img/filter_background.jpg");
   background-repeat: no-repeat;
@@ -662,13 +696,12 @@ img {
   color: #ffffff;
 }
 
-.hotel-choice label {
+.check {
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 40px;
   font-weight: 400;
   color: #ffffff;
-}
-
-.check {
-  padding-left: 40px;
 }
 
 .check__box {
@@ -707,7 +740,6 @@ img {
 .infrastructure {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -715,14 +747,14 @@ img {
 .housing-type {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-left: 119px;
 }
 
 .price {
-  width: 316px;
+  width: 318px;
+  margin-right:  -2px;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
@@ -739,7 +771,7 @@ img {
 .price-controls {
   position: relative;
   height: 33px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -749,7 +781,7 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
   width: 2px;
   height: 22px;
   background: #ffffff;
@@ -767,11 +799,16 @@ img {
 .price-controls .from,
 .price-controls .to {
   width: 90px;
+  margin-top: -3px;
   padding-left: 65px;
 }
 
+.price-controls .to {
+  padding-left: 58px;
+}
+
 .price-controls input {
-  width: 50px;
+  width: 48px;
   margin: 0;
   color: inherit;
   font: inherit;
