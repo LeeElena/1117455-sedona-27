@@ -212,7 +212,7 @@ img {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   width: 75px;
   height: 72px;
   background-image: url("../img/house_icon.svg");
@@ -247,7 +247,7 @@ img {
   width: 380px;
   padding-top: 60px;
   padding-right: 10px;
-  padding-bottom: 56px;
+  padding-bottom: 58px;
   padding-left: 10px;
   margin: 0;
 }
@@ -257,7 +257,7 @@ img {
 }
 
 .real-city p {
-  margin-top: 24px;
+  margin-top: 23px;
   color: #333333;
 }
 
@@ -272,7 +272,7 @@ img {
 .bridge li {
   width: 380px;
   margin: 0;
-  padding-top: 48px;
+  padding-top: 47px;
   padding-right: 10px;
   padding-bottom: 37px;
   padding-left: 10px;
@@ -630,21 +630,33 @@ img {
 }
 
 .twitter {
-  background-image: url("../img/twitter.svg");
+  background-image: url("../img/tw.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.twitter:active {
+  background-image: url("../img/tw-active.png");
 }
 
 .facebook {
-  background-image: url("../img/fb_icon.svg");
+  background-image: url("../img/fb.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.facebook:active {
+  background-image: url("../img/fb-active.png");
+}
+
 .youtube {
-  background-image: url("../img/youtube.svg");
+  background-image: url("../img/youtube.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.youtube:active {
+  background-image: url("../img/youtube-active.png");
 }
 
 .web {
