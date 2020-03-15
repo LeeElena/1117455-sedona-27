@@ -15,10 +15,11 @@ try {
   isStorageSupport = false;
 }
 
-arrivalDate.focus();
+
 
 hotelSearch.addEventListener("click", function () {
   popup.classList.toggle("modal-show");
+  arrivalDate.focus();
   if (adultsStorage) {
     adultsNumber.value = adultsStorage;
   };
