@@ -75,19 +75,23 @@ img {
   width: 239px;
   margin: 0;
   margin-top: 15px;
-  margin-right: 3px;
   margin-bottom: 15px;
+  margin-left: 71px;
   padding: 0;
-  text-align: center;
+  text-align: left;
+}
+
+.site-nav li:nth-child(2) {
+  margin-right: 162px;
 }
 
 .site-nav li:nth-child(3) {
-  margin-left: auto;
-  margin-right: 8px;
+  text-align: right;
 }
 
 .site-nav li:last-child {
-  margin-right: -8px;
+  margin-right: 71px;
+  text-align: right;
 }
 
 .visually-hidden {
@@ -487,9 +491,12 @@ img {
   padding-left: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
   background-color: #f2f2f2;
   border: 2px solid transparent;
+}
+
+.date-item input::placeholder {
+  color: #000000;
 }
 
 .date-item input:hover {
@@ -832,6 +839,18 @@ img {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off-2.png");
+}
+
+.check__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.check__input:focus~span {
+  opacity: 1;
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #4c99d4;
 }
 
 .check__input:checked + .check__box {
