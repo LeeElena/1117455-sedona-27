@@ -15,8 +15,6 @@ try {
   isStorageSupport = false;
 }
 
-
-
 hotelSearch.addEventListener("click", function () {
   popup.classList.toggle("modal-show");
   arrivalDate.focus();
