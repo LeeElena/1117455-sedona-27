@@ -1113,29 +1113,25 @@ img {
   margin-right: 32px;
 }
 
-.up {
+.up-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
-  margin-left: auto;
-  padding-right: 12px;
+  padding: 0;
+  padding-left: 504px;
+  list-style: none;
 }
 
-.radio__input {
-  position: absolute;
-  left: -9999px;
+.down {
+  padding-left: 11px;
 }
 
-.radio__input:focus~span {
-  opacity: 1;
-  outline-width: 5px;
-  outline-style: auto;
-  outline-color: #4c99d4;
-}
-
-.radio:hover polygon {
+.up-down:hover polygon {
   fill: #231f20;
 }
 
-.radio:active polygon {
+.up-down:active polygon {
   fill: #81b3d2;
 }
 
