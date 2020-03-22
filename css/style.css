@@ -55,7 +55,7 @@ img {
       flex-wrap: wrap;
   min-height: 56px;
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
   list-style: none;
 }
 
@@ -72,28 +72,24 @@ img {
 }
 
 .site-nav li {
-  width: 239px;
-  margin: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 72px;
-  padding: 0;
+  width: 25%;
+  margin: 15px 0;
   text-align: left;
 }
 
-.site-nav li:nth-child(2) {
-  margin-left: 2px;
+.site-nav li:nth-child(4n+2) {
+  margin-left: -24px;
 }
 
-.site-nav li:nth-child(3) {
-  margin-right: -66px;
-  margin-left: auto;
+.site-nav li:nth-child(3),
+.site-nav li:nth-child(4n+3) {
   text-align: right;
+  margin-left: 44px;
 }
 
-.site-nav li:last-child {
-  margin-right: 71px;
+.site-nav li:nth-child(4n) {
   text-align: right;
+  margin-left: -20px;
 }
 
 .visually-hidden {
@@ -877,6 +873,7 @@ img {
 /* inner */
 
 .on-site {
+  text-align: right;
   color: #766357;
 }
 
@@ -1238,23 +1235,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 72px;
-  padding-top: 18px;
-  padding-bottom: 23px;
+  padding-top: 19px;
+  padding-bottom: 18px;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .gallery-item img {
   margin-top: 12px;
+  margin-bottom: 5px;
 }
 
 .hotel-container {
+  max-width: 600px;
   margin: 0;
   margin-left: 30px;
   padding: 0;
@@ -1281,8 +1278,8 @@ img {
 
 .motel {
   margin: 0;
-  margin-top: 3px;
-  margin-bottom: 15px;
+  margin-top: 4px;
+  margin-bottom: 9px;
   padding: 2px 0;
   line-height: 21px;
   font-weight: 400;
@@ -1297,7 +1294,7 @@ img {
 }
 
 .details {
-  margin-right: 3px;
+  margin-right: 1px;
   padding: 5px 16px;
   line-height: 21px;
   color: #ffffff;
@@ -1315,6 +1312,7 @@ img {
 }
 
 .booking {
+  margin-right: 3px;
   padding: 5px 16px;
   line-height: 21px;
   color: #ffffff;
@@ -1329,6 +1327,24 @@ img {
 .booking:active {
   color: #857871;
   background-color: #503e33;
+}
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  flex: none;
+  max-width: 300px;
+}
+
+.btn-wrapper a:nth-child(2n) {
+  margin-left: 5px;
+}
+
+.btn-wrapper a {
+  margin-bottom: 5px;
 }
 
 .rating-container {
@@ -1350,7 +1366,7 @@ img {
 }
 
 .stars li {
-  margin-top: 3px;
+  margin-top: -5px;
   margin-right: 6px;
   width: 18px;
   height: 17px;
