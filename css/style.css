@@ -1239,15 +1239,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 72px;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 23px;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .gallery-item img {
   margin-top: 12px;
-  margin-bottom: 5px;
 }
 
 .hotel-container {
@@ -1260,6 +1259,7 @@ img {
 .hotel-name {
   margin: 0;
   padding: 0;
+  padding-top: 6px;
 }
 
 .hotel-name a {
@@ -1278,9 +1278,9 @@ img {
 
 .motel {
   margin: 0;
-  margin-top: 4px;
-  margin-bottom: 9px;
-  padding: 2px 0;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  padding: 12px 0;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
@@ -1295,7 +1295,7 @@ img {
 
 .details {
   margin-right: 1px;
-  padding: 5px 16px;
+  padding: 3px 16px;
   line-height: 21px;
   color: #ffffff;
   text-align: center;
@@ -1313,7 +1313,7 @@ img {
 
 .booking {
   margin-right: 3px;
-  padding: 5px 16px;
+  padding: 3px 16px;
   line-height: 21px;
   color: #ffffff;
   text-align: center;
@@ -1335,7 +1335,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  flex: none;
+  align-items: flex-start;
   max-width: 300px;
 }
 
@@ -1366,7 +1366,7 @@ img {
 }
 
 .stars li {
-  margin-top: -5px;
+  margin-top: 3px;
   margin-right: 6px;
   width: 18px;
   height: 17px;
